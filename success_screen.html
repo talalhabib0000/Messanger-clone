@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<style>
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #e84118;
+        padding: 2px;
+    }
+.bg-primary
+{
+   background-color: white!important; 
+}
+    .card-text {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+    }
+        .row {
+            display: flex;
+        }
+
+        .col {
+            height: 90px;
+            padding: 10px;
+        }
+
+        .col:nth-child(1) {
+           
+            flex-basis: 10%;
+        }
+
+        .col:nth-child(2) {
+           
+            flex-basis: 70%;
+        }
+
+        .col:nth-child(3) {
+           
+            flex-grow: 2;
+        }
+
+        .btn-primary:hover {
+    background-color: #2c8ed6;
+}
+
+.banner {
+  width: 100%;
+  height: 80px;
+  background-color: #f0f0f0; /* Fallback color in case the image fails to load */
+  background-image: url('images/banner2.png');
+  background-size: cover;
+  background-position: center;
+}
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  text-align: left;
+  margin: 10px;
+}
+
+.line {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #000;
+  margin-top: 20px;
+}
+.rectangle-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 190px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.centered-text {
+  text-align: center;
+  margin-top: 10px;
+}
+.footer {
+    margin-top: 50px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  flex-basis: 100%;
+}
+
+.footer-links a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.content-div {
+  margin-top: 30px;
+  
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+ontent-wrapper {
+  flex: 1 1 auto;
+}
+
+.heading {
+    margin-top: 5px;
+  font-size: 18px;
+  font-weight:normal;
+}
+
+.sub-heading {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.rect-image {
+  display: flex;
+width: 60px;
+height: 60px;
+  margin-left: 10px;
+  align-items: center;
+  width: fit-content;
+  padding: 5px;
+
+}
+
+.rect-image img {
+
+ width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 5px;
+}
+.header {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.container-second-div {
+  display: flex;
+  margin-left: 10px;margin-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  margin-right: 10px;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-content i {
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
+.right-content p {
+  font-size: 16px;padding-top: 5px;
+  font-weight: normal;
+}
+
+.text-container {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.arrow-container {
+  margin-left: 10px;
+}
+
+.input-container {
+    margin-top: 10px;
+    margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.login-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  width: 350px;
+  margin-bottom: 10px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-button {
+  margin: 15px 0;
+  padding: 10px 0;
+  width: 150px;
+  color: #0000FF; /* Blue text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #0000FF; /* Blue border */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+.container-new {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.centered-content {
+  text-align: center;
+}
+
+.centered-content img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.centered-content .text {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+
+.custom-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-bottom: 10px;
+}
+
+.custom-service i {
+  margin-right: 5px;
+}
+
+.logout-button {
+  padding: 3px 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #D43831; /* Blue text color */
+  background-color: transparent; 
+  border: 2px solid #D43831;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+
+</style>
+
+<body>
+    <div class="container mt-4">
+        <div class="card mx-auto" style="max-width: 400px" >
+           
+           <div">
+            <div class="card-header bg-primary">
+                <div class="navbar navbar-expand p-0" style="background-color: white;" >
+                    <a href="#" class="navbar-brand">
+                        <img src="images/logo.png" alt="Logo" style="width: 111px; height: 31px; margin: 7px 3px 7px 0; background-size: 100% 100%;">
+                    </a>
+                </div>
+                <div class="container-new">
+                    <div class="centered-content">
+                        <img src="images/dice.png" alt="Image">
+                        <p class="text">Transaction success</p>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="container-second-div">
+                <div class="left-content">
+                  <p>Selected Product</p>
+                </div>
+                <div class="right-content">
+                  <i class="fas fa-arrow-circle-down"></i>
+                  <p>2100</p>
+                </div>
+              </div>
+              <div class="container-second-div">
+                <div class="left-content">
+                  <p>Price</p>
+                </div>
+                <div class="right-content">
+                  <i class="fas fa-arrow-circle-down"></i>
+                  <p>960</p>
+                </div>
+              </div>
+              <div class="container-second-div">
+                <div class="left-content">
+                  <p>Game</p>
+                </div>
+                <div class="right-content">
+             
+                  <p>Free Fire</p>
+                </div>
+              </div>
+              <div class="container-second-div">
+                <div class="left-content">
+                  <p>Payment Method</p>
+                </div>
+                <div class="right-content">
+             
+                  <p>Prepaid Card</p>
+                </div>
+              </div>
+              <div class="container-second-div">
+                <div class="left-content">
+                  <p>Transaction Time</p>
+                </div>
+                <div class="right-content">
+             
+                  <p>28-08-2022 21:49:55</p>
+                </div>
+              </div>
+              <div class="container-second-div">
+                <div class="left-content">
+                  <p>Transaction ID</p>
+                </div>
+                <div class="right-content">
+             
+                  <p>ACRAF23DB3C4</p>
+                </div>
+              </div>
+              <div class="button-container">
+
+              <button class="login-button">BACK TO HOME PAGE</button>
+              </div>
+              <div">
+                <div class="custom-service">
+                    <i class="fas fa-cogs"></i>
+                    <span>Custom Service</span>
+                    <button class="logout-button">Logout</button>
+                  </div>
+                 
+              </div>
+              
+            
+            </div>
+              
+        </div>
+    </div>
+</body>
+
+</html>
